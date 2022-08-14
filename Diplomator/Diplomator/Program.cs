@@ -11,19 +11,19 @@ WriteLine(@"
 ╚═════╝░╚═╝╚═╝░░░░░╚══════╝░╚════╝░╚═╝░░░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝
 ");
 WriteLine("\nO seu diploma já foi entregue?\nDigite: 1[SIM] 2[NAO]");
-int option = int.Parse(ReadLine()!);
+string option = ReadLine()!;
 
-while (option != 1 && option != 2)
+while (option != "1" && option != "2")
 {
     Clear();
     Write("\nDIGITE A OPÇÃO CORRETA!");
     WriteLine("\t\nO diploma foi entregue?\nDigite: 1[SIM] 2[NAO]");
-    option = int.Parse(ReadLine()!);
+    option = ReadLine()!;
 }
 
 switch (option)
 {
-    case 1:
+    case "1":
         Clear();
         WriteLine(@"
                     ──────▄▀─
@@ -31,11 +31,10 @@ switch (option)
                     ──▀▄░▄▀──
                     ────█────
                     ──▄▄█▄▄──
-
                  ");
         WriteLine("\nParabéns Daniel, você está graduado! =)");
         break;
-    case 2:
+    case "2":
         Calculate calculate = new();
         calculate.PrintDays(Calculate.CalculateDays());
         break;
