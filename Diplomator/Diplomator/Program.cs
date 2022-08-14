@@ -2,7 +2,6 @@
 using static System.Console;
 
 WriteLine("Diplomator");
-
 WriteLine("\nO diploma foi entregue?\nDigite: 1[SIM] 2[NAO]");
 int option = int.Parse(ReadLine()!);
 
@@ -18,10 +17,10 @@ switch (option)
 {
     case 1:
         Clear();
-        WriteLine("\nParabéns, Daniel você está graduado!");
+        WriteLine("\nParabéns Daniel, você está graduado!");
         break;
     case 2:
-        Calculate calculate = new Calculate();
+        Calculate calculate = new();
         calculate.PrintDays(Calculate.CalculateDays());
         break;
     default:
