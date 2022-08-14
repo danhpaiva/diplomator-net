@@ -16,6 +16,7 @@ namespace Diplomator
 
         public void PrintDays(string days)
         {
+            Clear();
             WriteLine($"\nInfelizmente a entrega do diploma está atrasada há: {days} DIAS.");
         }
     }
