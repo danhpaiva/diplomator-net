@@ -32,7 +32,7 @@ switch (option)
                     ────█────
                     ──▄▄█▄▄──
                  ");
-        WriteLine("\nParabéns Daniel, você está graduado! =)");
+        WriteLine("\n\tEi Daniel, Parabénssss! Você está oficialmente diplomadoooo! =)");
         break;
     case "2":
         Calculate calculate = new();

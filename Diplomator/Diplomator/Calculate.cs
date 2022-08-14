@@ -24,7 +24,7 @@ namespace Diplomator
                   ▄███████▄.▲.▲▲▲▲▲▲▲▲
                   ████████████████████▀▀
                      ");
-            WriteLine($"\nInfelizmente a entrega do diploma está atrasada há: {days} DIAS.");
+            WriteLine($"\nEi Daniel,\nInfelizmente a entrega do diploma está atrasada há: {days} DIAS.");
         }
     }
 }
