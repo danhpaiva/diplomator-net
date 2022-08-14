@@ -2,7 +2,7 @@
 using static System.Console;
 
 WriteLine("Diplomator");
-WriteLine("\nO diploma foi entregue?\nDigite: 1[SIM] 2[NAO]");
+WriteLine("\nO seu diploma já foi entregue?\nDigite: 1[SIM] 2[NAO]");
 int option = int.Parse(ReadLine()!);
 
 while (option != 1 && option != 2)
