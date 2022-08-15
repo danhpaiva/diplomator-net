@@ -16,22 +16,22 @@ namespace Diplomator
 
         public static void Sucess()
         {
-            WriteLine("\n\tEi Daniel, Parabénssss! Você está oficialmente diplomadoooo!");
+            WriteLine("\n\tDaniel, Parabénssss! Você está oficialmente diplomadoooo!");
         }
 
         public static void Insucess(string days)
         {
-            WriteLine($"\nEi Daniel,\nInfelizmente a entrega do diploma está atrasada há: {days} DIAS.\nAté a próxima consulta!");
+            WriteLine($"\n\tDaniel, Infelizmente a entrega do diploma está atrasada há: {days} DIAS.\n\tAté a próxima consulta!");
         }
 
         public static void QuestionOne()
         {
-            WriteLine("\nO seu diploma já foi entregue?\nDigite: 1[SIM] 2[NAO]");
+            WriteLine("\n\tDaniel, o seu diploma já foi entregue?\n\tDigite: 1[SIM] 2[NAO]");
         }
 
         public static void ErrorOption()
         {
-            Write("\nDIGITE A OPÇÃO CORRETA!");
+            Write("\n\tDIGITE A OPÇÃO CORRETA!");
         }
     }
 }
