@@ -4,7 +4,7 @@ namespace Diplomator
 {
     public class Reader
     {
-        public static string Validate(ref string option)
+        public static bool Validate(ref string option)
         {
             while (option != "1" && option != "2")
             {
@@ -14,7 +14,7 @@ namespace Diplomator
                 Message.QuestionOne();
                 option = ReadLine()!;
             }
-            return option;
+            return true;
         }
     }
 }
