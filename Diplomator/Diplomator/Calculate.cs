@@ -1,6 +1,4 @@
-﻿using static System.Console;
-
-namespace Diplomator
+﻿namespace Diplomator
 {
     public class Calculate
     {
