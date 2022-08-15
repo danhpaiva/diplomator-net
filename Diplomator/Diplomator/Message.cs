@@ -33,5 +33,13 @@ namespace Diplomator
         {
             Write("\n\tDIGITE A OPÇÃO CORRETA!");
         }
+
+        public static void Final(string option, Calculate calculate)
+        {
+            if (option == "1")
+                Message.Sucess();
+            else
+                Message.Insucess(calculate.CalculateDays());
+        }
     }
 }

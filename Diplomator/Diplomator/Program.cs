@@ -16,11 +16,5 @@ while (option != "1" && option != "2")
 
 Clear();
 Message.Crocodile();
-
-if (option == "1")
-    Message.Sucess();
-else
-{
-    Calculate calculate = new();
-    Message.Insucess(calculate.CalculateDays());
-}
+Calculate calculate = new();
+Message.Final(option, calculate);
