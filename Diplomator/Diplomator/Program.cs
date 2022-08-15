@@ -8,10 +8,5 @@ Reader.Validate(ref option);
 Clear();
 Message.Crocodile();
 
-if (option == "1")
-    Message.Sucess();
-else
-{
-    Calculate calculate = new();
-    Message.Insucess(calculate.CalculateDays());
-}
+if (option == "1") Message.Sucess();
+else Message.Insucess(Calculate.CalculateDays());
