@@ -2,11 +2,9 @@
 {
     public class Calculate
     {
-        public static string CalculateDays()
+        public static string CalculateDays(DateTime dateUniversity, DateTime dateToday)
         {
-            DateTime dateUniversity = new(2022, 03, 29);
-            DateTime dateToday = DateTime.Now.Date;
-            var days = dateToday - dateUniversity;
+            var days = dateToday.Date - dateUniversity;
             return days.Days.ToString();
         }
     }

@@ -9,4 +9,8 @@ Clear();
 Message.Crocodile();
 
 if (option == "1") Message.Sucess();
-else Message.Insucess(Calculate.CalculateDays());
+else
+{
+    DateTime dateUniversity = new(2022,03,29);
+    Message.Insucess(Calculate.CalculateDays(dateUniversity, DateTime.Now));
+}
