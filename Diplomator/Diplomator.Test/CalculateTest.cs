@@ -47,5 +47,16 @@ namespace Diplomator.Test
 
             Assert.NotNull(result);
         }
+
+        [Fact]
+        public static void CalculateDays_WithSucess_ResultNotIsEmpty()
+        {
+            DateTime dateUniversity = new DateTime(2022, 03, 29);
+            DateTime dateToday = new DateTime(2022, 08, 14);
+
+            var result = Calculate.CalculateDays(dateUniversity, dateToday);
+
+            Assert.NotEmpty(result);
+        }
     }
 }
