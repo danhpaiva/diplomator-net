@@ -3,7 +3,7 @@ namespace Diplomator.Test
     public class CalculateTest
     {
         [Fact]
-        public static void CalculateDays_WithSucess_DateCorrect()
+        public static void CalculateDays_WithSucess_ResultCorrect()
         {
             DateTime dateUniversity = new DateTime(2022, 03, 29);
             DateTime dateToday = new DateTime(2022, 08, 14);
@@ -18,7 +18,7 @@ namespace Diplomator.Test
         [InlineData("2022/08/13", "2022/08/14")]
         [InlineData("2022/08/10", "2022/08/11")]
         [InlineData("2022/07/01", "2022/07/02")]
-        public void CalculateDays_WithSucess_MultipleDateCorrect(DateTime dateUniversity, DateTime dateToday)
+        public void CalculateDays_WithSucess_MultipleResultCorrect(DateTime dateUniversity, DateTime dateToday)
         {
             var result = Calculate.CalculateDays(dateUniversity, dateToday);
 
@@ -26,7 +26,7 @@ namespace Diplomator.Test
         }
 
         [Fact]
-        public static void CalculateDays_WithSucess_DateIncorrect()
+        public static void CalculateDays_WithSucess_ResultIncorrect()
         {
             DateTime dateUniversity = new DateTime(2022, 03, 29);
             DateTime dateToday = new DateTime(2022, 08, 14);
