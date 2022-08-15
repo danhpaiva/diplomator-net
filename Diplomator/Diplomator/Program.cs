@@ -1,7 +1,7 @@
 ﻿using Diplomator;
 using static System.Console;
 
-Message.MessageInitial();
+Message.PrintAligator();
 Message.QuestionOne();
 string option = ReadLine()!;
 
