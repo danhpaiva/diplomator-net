@@ -4,7 +4,7 @@ namespace Diplomator
 {
     public class Message
     {
-        public static void PrintAligator()
+        public static void Crocodile()
         {
             WriteLine(@"
                   ─────▄████▀█▄
